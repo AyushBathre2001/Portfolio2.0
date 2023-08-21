@@ -5,24 +5,24 @@ import Link from 'next/link'
 const Home = () => {
   return (
     <div style={{ fontFamily: "gilroy" }} className='container min-h-screen w-full'>
-      <section className='sec1 w-full flex flex-col items-start justify-center p-5 mt-6'>
+      <section className='sec1 w-full flex flex-col items-center text-center lg:items-start justify-center p-5 mt-4'>
         <h2 className='text-2xl font-medium text-gray-600 mb-2'>Creative</h2>
-        <h1 style={{ fontFamily: 'rogre' }} className='name font-extrabold text-8xl'>WEB DESIGNER & DEVELOPER</h1>
+        <h1 style={{ fontFamily: 'rogre' }} className='name font-extrabold text-6xl md:text-7xl lg:text-8xl'>WEB DESIGNER & DEVELOPER</h1>
         <p className='mt-1 text-lg'>Your vision, our expertise: Crafting the perfect website for you. Ceative web designer harnessing the power of design to achieve online goals. </p>
       </section>
-      <section className='sec2 w-full flex items-end justify-between p-5 '>
-        <div className='w-96 h-[75vh] overflow-hidden rounded-tl-3xl rounded-tr-3xl bg-black'>
+      <section className='sec2 w-full flex items-end justify-evenly  '>
+        <div className='w-[25vw] h-[38vw] overflow-hidden rounded-tl-3xl rounded-tr-3xl bg-black'>
           <img className='object-cover h-full w-full' src="/images/model1.jpg" alt="" />
         </div>
-        <div className='w-80 h-[80vh] rounded-tl-3xl overflow-hidden rounded-tr-3xl bg-black'>
+        <div className='w-[20vw] h-[40vw] rounded-tl-3xl overflow-hidden rounded-tr-3xl bg-black'>
           <img className='object-cover h-full w-full' src="/images/place.jpg" alt="" />
 
         </div>
-        <div className='w-96 h-[70vh] rounded-tl-3xl overflow-hidden rounded-tr-3xl bg-black'>
+        <div className='w-[25vw] h-[37vw] rounded-tl-3xl overflow-hidden rounded-tr-3xl bg-black'>
           <img className='object-cover h-full w-full' src="/images/model2.jpg" alt="" />
 
         </div>
-        <div className='w-96 h-[80vh] rounded-tl-3xl overflow-hidden rounded-tr-3xl bg-black'>
+        <div className='w-[25vw] h-[38vw] rounded-tl-3xl overflow-hidden rounded-tr-3xl bg-black'>
           <img className='object-cover h-full w-full' src="/images/animal.jpg" alt="" />
 
         </div>
@@ -30,9 +30,9 @@ const Home = () => {
       </section>
       <section className='intro w-full min-h-[55vh] items-center justify-evenly flex flex-col'>
         <div className='w-[90%] h-[1px] bg-gray-500 '></div>
-        <div className=' flex flex-col p-10 items-start justify-center'>
+        <div className=' flex flex-col p-10 items-start text-center justify-center'>
           <h2 className='text-xl mb-1'>Hello I'm,</h2>
-          <div className='flex items-center justify-center'>
+          <div className='flex lg:flex-row flex-col items-center text-center justify-center'>
             <h1 style={{ fontFamily: 'rogre' }} className='text-6xl font-bold text-gray-700'>Ayush Bathre</h1>
             <div className=' flex ml-4 h-full gap-5 flex-wrap items-center justify-center'>
               <Image src={'/png/next.png'} width={40} height={40}></Image>
@@ -59,10 +59,10 @@ const Home = () => {
       </section>
       <section className='min-h-screen w-full flex flex-col items-center justify-center'>
 
-        <div className='flex'>
+        <div className='flex lg:flex-row flex-col-reverse items-center'>
 
 
-          <div className='w-[60%]'>
+          <div className='lg:w-[60%]'>
             <div class='flex items-center justify-center min-h-screen flex-wrap   '>
               <div class=' px-5 py-8  my-3 mx-2 bg-white rounded-lg shadow-xl'>
                 <div class='w-56'>
@@ -176,7 +176,7 @@ const Home = () => {
             </div>
 
           </div>
-          <div className='w-[40%]'>
+          <div className='lg:w-[40%] flex items-center justify-center'>
             <img className='rounded-xl w-[90%] ' src="/images/model3.jpg" alt="" />
           </div>
         </div>
@@ -185,18 +185,18 @@ const Home = () => {
       <section className='min-h-screen w-full flex flex-col items-center'>
         <div className='w-[95%] h-[1px] bg-gray-200 mt-10 '></div>
 
-        <div className='px-10 py-8'>
+        <div className='px-10 py-8 flex flex-col items-center justify-center text-center'>
           <h1 style={{ fontFamily: "rogre" }} className='text-3xl font-bold'>Projects</h1>
-          <p>I am excited to showcase my impressive projects to you. I believe that my work will provide you with a better understanding of my skills and expertise. I am confident that my projects will demonstrate my ability to tackle complex challenges and deliver quality results. I hope you find my projects inspiring and I look forward to your feedback.</p>
+          <p className='mt-3'>I am excited to showcase my impressive projects to you. I believe that my work will provide you with a better understanding of my skills and expertise. I am confident that my projects will demonstrate my ability to tackle complex challenges and deliver quality results. I hope you find my projects inspiring and I look forward to your feedback.</p>
         </div>
         <div className='projects flex items-center justify-evenly flex-wrap'>
-          <div className='w-[50%] cursor-pointer p-7 m-2 rounded-2xl shadow-lg bg-white min-h-[60vh]'>
+          <div className='lg:w-[50%] cursor-pointer p-7 m-2 rounded-2xl shadow-lg bg-white min-h-[60vh]'>
           <Link href="https://wearshop-nextjs.netlify.app/">
             <img className='w-full  object-cover' src="/images/project1.png" alt="" />
             <p className='mt-2 text-base font-medium text-gray-700'> <span className='font-bold text-black'>E-Commerce Website</span> built with Next.js, Node.js, Express.js, MongoDB, and Tailwind CSS! This project provides a complete solution for an online store, offering various products such as t-shirts, hoodies, mugs, and stickers. It incorporates essential features including user authentication, shopping cart functionality, order management, and payment integration using Razorpay. </p>
           </Link>
           </div>
-          <div className='w-[44%] cursor-pointer p-7 m-2 rounded-2xl shadow-lg bg-white min-h-[60vh]'>
+          <div className='lg:w-[44%] cursor-pointer p-7 m-2 rounded-2xl shadow-lg bg-white min-h-[60vh]'>
           <Link href="https://github.com/AyushBathre2001/Messenger-App">
             <img className='w-full  object-cover' src="/images/project4.png" alt="" />
             <p className='mt-2 text-base font-medium text-gray-700'> <span className='font-bold text-black'>Real Time Chat Application</span> built using MERN Stack and web sockets.
@@ -206,14 +206,14 @@ const Home = () => {
           </Link>
           </div>
 
-          <div className='w-[44%] cursor-pointer m-2 p-7 rounded-2xl shadow-lg bg-white min-h-[60vh]'>
+          <div className='lg:w-[44%] cursor-pointer m-2 p-7 rounded-2xl shadow-lg bg-white min-h-[60vh]'>
           <Link href="https://github.com/AyushBathre2001/Sociosphere---Social-Media-Application">
             <img className='w-full  object-cover' src="/images/project2.png" alt="" />
             <p className='mt-2 text-base font-medium text-gray-700'>A Next.js 13 based <span className='font-bold text-black'>Social Media Platform</span> that allows users to connect, share posts, like, comment, and interact with others. This application provides a user-friendly interface and exciting features to enhance your social networking experience.</p>
 
           </Link>
           </div>
-          <div className='w-[50%] cursor-pointer p-7 m-2 rounded-2xl shadow-lg bg-white min-h-[60vh]'>
+          <div className='lg:w-[50%] cursor-pointer p-7 m-2 rounded-2xl shadow-lg bg-white min-h-[60vh]'>
           <Link href="https://github.com/AyushBathre2001/Food-order-application">
             <img className='w-full  object-cover' src="/images/project3.png" alt="" />
             <p className='mt-2 text-base font-medium text-gray-700'> <span className='font-bold text-black'>Food Ordering Website</span> is an e-commerce project built using MERN Stack. It helps user to order their favorite meal using the platform. Users can add to cart, pay, and order food within few seconds. It also has real time admin panel to address incoming orders. </p>
@@ -226,29 +226,29 @@ const Home = () => {
       </section>
 
       <section className='min-h-[80vh]  flex flex-col items-center justify-center'>
-        <div className='p-10 mt-5'>
+        <div className='p-10 mt-5 flex flex-col items-center justify-center text-center'>
           <h1 style={{ fontFamily: "rogre" }} className='text-3xl font-bold'>Certifications</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa atque quia consequatur repellat perspiciatis omnis aut corporis reprehenderit voluptatibus ut cum quae molestiae recusandae sapiente, expedita dolor? Ipsam, rem beatae?</p>
+          <p className='mt-3'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa atque quia consequatur repellat perspiciatis omnis aut corporis reprehenderit voluptatibus ut cum quae molestiae recusandae sapiente, expedita dolor? Ipsam, rem beatae?</p>
         </div>
         <div className='w-full    flex-wrap gap-5 flex items-center justify-center'>
 
 
-          <div className='w-[30vw]'>
+          <div className='lg:w-[30vw]'>
             <img className='shadow-lg w-full' src="/images/problemsolving.jpg" alt="" />
           </div>
-          <div className='w-[30vw]'>
+          <div className='lg:w-[30vw]'>
             <img className='shadow-lg w-full' src="/images/email.jpg" alt="" />
           </div>
-          <div className='w-[30vw]'>
+          <div className='lg:w-[30vw]'>
             <img className='shadow-lg w-full' src="/images/javascript.jpg" alt="" />
           </div>
-          <div className='w-[30vw]'>
+          <div className='lg:w-[30vw]'>
             <img className='shadow-lg w-full' src="/images/git.jpg" alt="" />
           </div>
-          <div className='w-[30vw]'>
+          <div className='lg:w-[30vw]'>
             <img className='shadow-lg w-full' src="/images/sql.jpg" alt="" />
           </div>
-          <div className='w-[30vw]'>
+          <div className='lg:w-[30vw]'>
             <img className='shadow-lg w-full' src="/images/photoshop.jpg" alt="" />
           </div>
 
@@ -258,13 +258,13 @@ const Home = () => {
 
       </section>
 
-      <section className='flex min-h-[40vh] w-full items-center justify-evenly p-10'>
-        <div className='w-[60%]'>
+      <section className='flex flex-col lg:flex-row min-h-[40vh] w-full items-center justify-evenly p-10'>
+        <div className='lg:w-[60%]'>
           <h1 className='text-6xl font-semibold text-gray-700'>HAVE AN IDEA ?</h1>
           <h2 className='text-xl font-medium'>Lets do it together</h2>
           <p>Don't put your creativity on hold and let's build a professional web experience which will put you above your competitors.</p>
         </div>
-        <div>
+        <div className=' mt-5 lg:mt-0'>
           <h2 className='text-2xl font-semibold text-gray-700'>GET IN TOUCH</h2>
           <div className='text-2xl text-gray-700'>
             <i class="ri-mail-fill"></i>
