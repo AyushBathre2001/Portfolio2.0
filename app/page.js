@@ -14,7 +14,7 @@ const Home = () => {
         <div className='w-[25vw] h-[38vw] overflow-hidden rounded-tl-3xl rounded-tr-3xl bg-black'>
           <img className='object-cover h-full w-full' src="/images/model1.jpg" alt="" />
         </div>
-        <div className='w-[20vw] h-[40vw] rounded-tl-3xl overflow-hidden rounded-tr-3xl bg-black'>
+        <div className='w-[22vw] h-[40vw] rounded-tl-3xl overflow-hidden rounded-tr-3xl bg-black'>
           <img className='object-cover h-full w-full' src="/images/place.jpg" alt="" />
 
         </div>
