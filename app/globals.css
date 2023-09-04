@@ -7,3 +7,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.cr{
+  background: -webkit-linear-gradient(#ffae00, #ff00ae);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
