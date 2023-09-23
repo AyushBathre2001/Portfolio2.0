@@ -27,15 +27,15 @@ const Navbar = () => {
       </div>
       <div className='relative initial md:hidden lg:hidden'>
       <i onClick={()=>{setShow(!show)}} className="ri-menu-3-line text-2xl cursor-pointer"></i>
-      <div className={`dropdown absolute  ${show ? 'initial' : 'hidden'} right-0 mt-5 w-56 h-56 rounded-xl bg-gray-500`}>
+      <div className={`dropdown absolute  ${show ? 'initial' : 'hidden'} shadow-lg right-0 mt-5 w-56 h-60 rounded-xl `}>
 
       <nav className="w-full h-full">
-        <ul className='flex flex-col gap-3 text-white font-medium w-full h-full text-sm items-center justify-center'>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About me</a></li>
-            <li><a href="/">Skills</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Certificates</a></li>
+        <ul className='flex flex-col gap-5 text-white  font-medium w-full h-full text-sm items-center justify-center'>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#intro">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
         </ul>
 
       </nav>

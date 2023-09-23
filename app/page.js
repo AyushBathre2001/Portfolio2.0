@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { lazy } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
@@ -38,15 +38,15 @@ const Home = () => {
           <div className='flex lg:flex-row flex-col items-center text-center justify-center'>
             <h1 style={{ fontFamily: 'rogre' }} className='text-6xl font-bold text-gray-700'>Ayush Bathre</h1>
             <div className=' flex ml-4 h-full gap-5 flex-wrap items-center justify-center'>
-              <Image src={'/png/next.png'} width={40} height={40}></Image>
-              <Image src={'/png/html.png'} width={40} height={40}></Image>
-              <Image src={'/png/css.png'} width={40} height={40}></Image>
-              <Image src={'/png/react.png'} width={40} height={40}></Image>
-              <Image src={'/png/node.png'} width={40} height={40}></Image>
-              <Image src={'/png/express.png'} width={40} height={40}></Image>
-              <Image src={'/png/git.png'} width={40} height={40}></Image>
-              <Image src={'/png/js.png'} width={40} height={40}></Image>
-              <Image src={'/png/mongo.png'} width={40} height={40}></Image>
+              <Image alt='image' priority={false} quality={50} src={'/png/next.png'} width={40} height={40}></Image>
+              <Image alt='image' priority={false} quality={50} src={'/png/html.png'} width={40} height={40}></Image>
+              <Image alt='image' priority={false} quality={50} src={'/png/css.png'} width={40} height={40}></Image>
+              <Image alt='image' priority={false} quality={50} src={'/png/react.png'} width={40} height={40}></Image>
+              <Image alt='image' priority={false} quality={50} src={'/png/node.png'} width={40} height={40}></Image>
+              <Image alt='image' priority={false} quality={50} src={'/png/express.png'} width={40} height={40}></Image>
+              <Image alt='image' priority={false} quality={50} src={'/png/git.png'} width={40} height={40}></Image>
+              <Image alt='image' priority={false} quality={50} src={'/png/js.png'} width={40} height={40}></Image>
+              <Image alt='image' priority={false} quality={50} src={'/png/mongo.png'} width={40} height={40}></Image>
 
             </div>
 
@@ -70,7 +70,7 @@ const Home = () => {
               <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1,y:0}} transition={{duration:0.5}} className=' px-5 py-8  my-3 mx-2 bg-white rounded-lg shadow-xl'>
                 <div className='w-56'>
                   <div className='flex items-center gap-1 '>
-                    <Image src={'/png/next.png'} width={30} height={30}></Image>
+                    <Image alt='img' src={'/png/next.png'} width={30} height={30}></Image>
                     <h2>NextJS</h2>
                   </div>
                   <p className='text-gray-600  my-2'>Next.js is a flexible React framework that gives you building blocks to create fast web applications.</p>
@@ -82,7 +82,7 @@ const Home = () => {
               <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1,y:0}} transition={{duration:0.5}} className=' px-5 py-8  my-3 mx-2 bg-white rounded-lg shadow-xl'>
                 <div className='w-56'>
                   <div className='flex items-center gap-1 '>
-                    <Image src={'/png/react.png'} width={30} height={30}></Image>
+                    <Image alt='img' src={'/png/react.png'} width={30} height={30}></Image>
                     <h2>ReactJS</h2>
                   </div>
                   <p className='text-gray-600  my-2'>The React.js framework is an open-source JavaScript framework and library developed by Facebook.  </p>
@@ -94,7 +94,7 @@ const Home = () => {
               <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1,y:0}} transition={{duration:0.5}} className=' px-5 py-8  my-3 mx-2 bg-white rounded-lg shadow-xl'>
                 <div className='w-56'>
                   <div className='flex items-center gap-1 '>
-                    <Image src={'/png/node.png'} width={30} height={30}></Image>
+                    <Image alt='img' src={'/png/node.png'} width={30} height={30}></Image>
                     <h2>NodeJS</h2>
                   </div>
                   <p className='text-gray-600  my-2'>
@@ -107,7 +107,7 @@ const Home = () => {
               <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1,y:0}} transition={{duration:0.5}} className=' px-5 py-8 my-3 mx-2  bg-white rounded-lg shadow-xl'>
                 <div className='w-56'>
                   <div className='flex items-center gap-1 '>
-                    <Image src={'/png/express.png'} width={30} height={30}></Image>
+                    <Image alt='img' src={'/png/express.png'} width={30} height={30}></Image>
                     <h2>ExpressJS</h2>
                   </div>
                   <p className='text-gray-600  my-2'>Express is a minimal and flexible Node.js web application framework that provides a set of features </p>
@@ -119,7 +119,7 @@ const Home = () => {
               <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1,y:0}} transition={{duration:0.5}} className=' px-5 py-8  my-3 mx-2 bg-white rounded-lg shadow-xl'>
                 <div className='w-56'>
                   <div className='flex items-center gap-1 '>
-                    <Image src={'/png/js.png'} width={30} height={30}></Image>
+                    <Image alt='img' src={'/png/js.png'} width={30} height={30}></Image>
                     <h2>Javascript</h2>
                   </div>
                   <p className='text-gray-600  my-2'>JavaScript is a scripting language used to develop web pages developed in Netscape.</p>
@@ -131,7 +131,7 @@ const Home = () => {
               <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1,y:0}} transition={{duration:0.5}} className=' px-5 py-8  my-3 mx-2 bg-white rounded-lg shadow-xl'>
                 <div className='w-56'>
                   <div className='flex items-center gap-1 '>
-                    <Image src={'/png/mongo.png'} width={30} height={30}></Image>
+                    <Image alt='img' src={'/png/mongo.png'} width={30} height={30}></Image>
                     <h2>MongoDB</h2>
                   </div>
                   <p className='text-gray-600  my-2'>MongoDB is a non-relational document database that provides support for JSON-like storage.</p>
@@ -143,7 +143,7 @@ const Home = () => {
               <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1,y:0}} transition={{duration:0.5}} className=' px-5 py-8  my-3 mx-2 bg-white rounded-lg shadow-xl'>
                 <div className='w-56'>
                   <div className='flex items-center gap-1 '>
-                    <Image src={'/png/git.png'} width={30} height={30}></Image>
+                    <Image alt='img' src={'/png/git.png'} width={30} height={30}></Image>
                     <h2>Git/Github</h2>
                   </div>
                   <p className='text-gray-600  my-2'>Git is a mature, actively maintained open source project originally developed in 2005 by Linus Torvalds.</p>
@@ -155,7 +155,7 @@ const Home = () => {
               <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1,y:0}} transition={{duration:0.5}} className=' px-5 py-8  my-3 mx-2 bg-white rounded-lg shadow-xl'>
                 <div className='w-56'>
                   <div className='flex items-center gap-1 '>
-                    <Image src={'/png/tailwind.png'} width={30} height={30}></Image>
+                    <Image alt='img' src={'/png/tailwind.png'} width={30} height={30}></Image>
                     <h2>TailwindCSS</h2>
                   </div>
                   <p className='text-gray-600  my-2'>Tailwind CSS is a utility-first CSS framework for building modern websites without ever leaving your HTML.</p>
@@ -167,7 +167,7 @@ const Home = () => {
               <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1,y:0}} transition={{duration:0.5}} className=' px-5 py-8  my-3 mx-2 bg-white rounded-lg shadow-xl'>
                 <div className='w-56'>
                   <div className='flex items-center gap-1 '>
-                    <Image src={'/png/motion.png'} width={30} height={30}></Image>
+                    <Image alt='img' src={'/png/motion.png'} width={30} height={30}></Image>
                     <h2>Framer Motion</h2>
                   </div>
                   <p className='text-gray-600  my-2'>Framer Motion is a simple yet powerful motion library for React. It powers the amazing animations.</p>
@@ -180,7 +180,7 @@ const Home = () => {
 
           </div>
           <div className='lg:w-[40%] flex items-center overflow-hidden justify-center'>
-            <img  className='rounded-xl w-[90%] hover:scale-105 transition-all ' src="/images/model3.jpg" alt="" />
+            <img loading='lazy'  className='rounded-xl w-[90%] hover:scale-105 transition-all ' src="/images/model3.jpg" alt="" />
           </div>
         </div>
       </section>
@@ -237,22 +237,22 @@ const Home = () => {
 
 
           <motion.div initial={{opacity:0,x:50}} whileInView={{opacity:1,x:0}} transition={{duration:1}} className='lg:w-[30vw]'>
-            <img className='shadow-lg w-full' src="/images/problemsolving.jpg" alt="" />
+            <img loading='lazy' className='shadow-lg w-full' src="/images/problemsolving.jpg" alt="" />
           </motion.div>
           <div  className='lg:w-[30vw]'>
-            <img className='shadow-lg w-full' src="/images/email.jpg" alt="" />
+            <img loading='lazy' className='shadow-lg w-full' src="/images/email.jpg" alt="" />
           </div>
           <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} transition={{duration:1}} className='lg:w-[30vw]'>
-            <img className='shadow-lg w-full' src="/images/javascript.jpg" alt="" />
+            <img loading='lazy' className='shadow-lg w-full' src="/images/javascript.jpg" alt="" />
           </motion.div>
           <motion.div initial={{opacity:0,x:50}} whileInView={{opacity:1,x:0}} transition={{duration:1}} className='lg:w-[30vw]'>
-            <img className='shadow-lg w-full' src="/images/git.jpg" alt="" />
+            <img loading='lazy' className='shadow-lg w-full' src="/images/git.jpg" alt="" />
           </motion.div>
           <div  className='lg:w-[30vw]'>
-            <img className='shadow-lg w-full' src="/images/sql.jpg" alt="" />
+            <img loading='lazy' className='shadow-lg w-full' src="/images/sql.jpg" alt="" />
           </div>
           <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} transition={{duration:1}} className='lg:w-[30vw]'>
-            <img className='shadow-lg w-full' src="/images/photoshop.jpg" alt="" />
+            <img loading='lazy' className='shadow-lg w-full' src="/images/photoshop.jpg" alt="" />
           </motion.div>
 
         </div>
